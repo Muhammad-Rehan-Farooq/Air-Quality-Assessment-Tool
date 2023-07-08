@@ -13,7 +13,7 @@ Install [node](https://nodejs.org/en/download/) on your local machine.
 
 ### _SSH_
 
-`git clone `
+`git clone git@github.com:Muhammad-Rehan-Farooq/Air-Quality-Assessment-Tool.git`
 
 ## Developing
 
