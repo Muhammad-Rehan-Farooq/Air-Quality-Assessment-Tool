@@ -19,9 +19,7 @@ Install [node](https://nodejs.org/en/download/) on your local machine.
 
 ### _1. In the project directory:_
 
-Open Terminal run `npm install`_
-
-To install the project dependencies.
+Open Terminal and run `npm install` to install the project dependencies.
 
 ### _2. then run `npm start`_
 
