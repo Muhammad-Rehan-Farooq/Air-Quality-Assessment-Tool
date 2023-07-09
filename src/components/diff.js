@@ -1,6 +1,9 @@
 import { Card } from 'semantic-ui-react';
 
 const Diff = ({ diff }) => {
+  if (Object.keys(diff).length === 0) {
+    return null;
+  }
   
   return (
     <Card style={{ margin: 'auto' }}>

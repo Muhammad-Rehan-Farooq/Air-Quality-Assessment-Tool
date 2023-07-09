@@ -23,6 +23,8 @@ const ComparisonView = ({ airQuality1, airQuality2 }) => {
     }
   }, [airQuality1, airQuality2]);
   
+  console.log(airQuality1);
+  console.log(airQuality2);
   // check if object is empty
   if (!(airQuality1 !== null && typeof airQuality1 === "object" && Object.keys(airQuality1).length > 0)
     && !(airQuality2 !== null && typeof airQuality2 === "object" && Object.keys(airQuality2).length > 0)
