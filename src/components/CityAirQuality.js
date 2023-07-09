@@ -4,7 +4,13 @@ import { Card } from 'semantic-ui-react';
 
 const CityAirQuality = ({ airQuality }) => {
   if (!(airQuality !== null && typeof airQuality === "object" && Object.keys(airQuality).length > 0)) {
-    return null;
+    return (
+      <Card style={{ margin: 'auto' }}>
+        <Card.Content>
+          <Card.Header>Invalid City</Card.Header>
+        </Card.Content>
+      </Card>
+    );
   }
 
   return (
