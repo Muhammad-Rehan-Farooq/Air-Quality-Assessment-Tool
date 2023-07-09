@@ -18,9 +18,9 @@ const SearchForm = ({ setAirQualities }) => {
       const response2 = await axios.get(
         `https://api.openaq.org/v1/latest?country_id=US&city=${city2}`
       );
-      const AQ1 = response1?.data?.results?.[0]?.measurements?.[0]?.value;
-      const AQ2 = response2?.data?.results?.[0]?.measurements?.[0]?.value;
-      setAirQualities({city: city1, airQuality: AQ1}, {city: city2, airQuality: AQ2});
+      const AQ1 = response1?.data?.results?.[0];
+      const AQ2 = response2?.data?.results?.[0];
+      setAirQualities(AQ1, AQ2);
       setIsLoading(false);
     } catch (error) {
       console.error('Error fetching air quality data:', error);
