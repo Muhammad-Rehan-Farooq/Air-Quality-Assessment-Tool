@@ -19,7 +19,7 @@ const CityAirQuality = ({ airQuality }) => {
           {airQuality?.measurements?.[0]?.sourceName || "Not found"}
         </Card.Description>
         <Card.Description>
-          {airQuality?.measurements?.[0]?.value || "Not found"}: {' '}
+          {airQuality?.measurements?.[0]?.value || "Not found"} {' '}
           {airQuality?.measurements?.[0]?.unit || "Not found"}
         </Card.Description>
       </Card.Content>
